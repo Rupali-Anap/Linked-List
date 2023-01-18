@@ -49,4 +49,10 @@ public class LinkedList<T> {
             node.next = newNode;
         }
     }
+    public void pop() {
+        if (null != head) {
+            Node<T> newHead = head.next;
+            head = newHead;
+        }
+    }
 }
