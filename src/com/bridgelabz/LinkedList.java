@@ -17,7 +17,6 @@ public class LinkedList<T> {
                 last.next = newNode;
             }
         }
-
         public void show() {
             Node<T> node = head;
             while (node.next != null) {
@@ -27,7 +26,7 @@ public class LinkedList<T> {
             System.out.println(node.data);
         }
 
-        public void addStart(T value) {
+        public void addAtStart(T value) {
             Node<T> newNode = new Node<>();
             newNode.data = value;
             newNode.next = head;
