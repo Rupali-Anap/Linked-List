@@ -66,5 +66,21 @@ public class LinkedList<T> {
         }
         prevNode.next = null;
     }
-
+    public int searchByValue(T value) {
+        Node<T> currNode = head;
+        int index = 0;
+        if (null != currNode) {
+            while ((null != currNode.next) || (null != currNode.data)) {
+                if (currNode.data == value) {
+                    break;
+                }
+                currNode = currNode.next;
+                if (null == currNode) {
+                    return -1;
+                }
+                index++;
+            }
+        }
+        return index;
+    }
 }
