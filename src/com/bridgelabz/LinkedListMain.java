@@ -7,10 +7,9 @@ public class LinkedListMain {
         LinkedList1.add(56);
         LinkedList1.add(70);
         LinkedList1.addAtIndex(1, 30);
-        System.out.println("Before Deleting Last Element");
         LinkedList1.show();
-        System.out.println("After Deleting Last Element");
-        LinkedList1.popLast();
-        LinkedList1.show();
+        String searchresult = (LinkedList1.searchByValue(30) == -1) ? "value not found in the list" : "value found at index " + LinkedList1.searchByValue(30);
+        System.out.println(searchresult);
     }
+
 }
