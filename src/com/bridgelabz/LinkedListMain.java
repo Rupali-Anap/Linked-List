@@ -5,8 +5,8 @@ public class LinkedListMain {
         System.out.println("Welcome to Linked List Program");
         LinkedList<Integer> LinkedList1 = new LinkedList<>();
         LinkedList1.add(56);
-        LinkedList1.add(30);
         LinkedList1.add(70);
+        LinkedList1.addAtIndex(1,30);
         LinkedList1.show();
     }
 }
