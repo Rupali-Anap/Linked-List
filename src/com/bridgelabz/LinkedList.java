@@ -49,10 +49,22 @@ public class LinkedList<T> {
             node.next = newNode;
         }
     }
+
     public void pop() {
         if (null != head) {
             Node<T> newHead = head.next;
             head = newHead;
         }
     }
+
+    public void popLast() {
+        Node<T> tail = head;
+        Node<T> prevNode = head;
+        while (tail.next != null) {
+            prevNode = tail;
+            tail = tail.next;
+        }
+        prevNode.next = null;
+    }
+
 }
