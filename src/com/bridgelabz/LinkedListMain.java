@@ -8,10 +8,15 @@ public class LinkedListMain {
         LinkedList1.add(70);
         LinkedList1.addAtIndex(1, 30);
         LinkedList1.show();
-        String searchResult = (LinkedList1.searchByValue(30) == -1) ? "value not found in the list" : "value found at index " + LinkedList1.searchByValue(30);
-        System.out.println(searchResult);
         System.out.println("After Inserting");
-        LinkedList1.searchAndInsert(30, 40);
+        LinkedList1.searchAndInsert(30,40);
         LinkedList1.show();
+        System.out.println();
+        LinkedList1.searchValueAndDelete(40);
+        System.out.println("After Deleting");
+        LinkedList1.show();
+        System.out.println("Size of list is : " + LinkedList1.size());
+
     }
 }
+
