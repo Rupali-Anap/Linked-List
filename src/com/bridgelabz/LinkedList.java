@@ -83,4 +83,8 @@ public class LinkedList<T> {
         }
         return index;
     }
+    public void searchAndInsert(T searchValue, T InsertValue){
+        int index = searchByValue(searchValue) + 1;
+        addAtIndex(index, InsertValue);
+    }
 }
